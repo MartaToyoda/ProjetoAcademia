@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia</title>
+</head>
+<body>
+
+
+<h1>Bem-vindo à academia Seca Gordura!</h1>
+<h2>Nossa equipe, formada pelos personais trainees Marta Toyoda e Rian Mendonça, estão aptos para lhe ajudar no seu programa de emagrecimento.</h2>
+<h3>Estamos localizados na Rua ABC, 81 - das 7h às 22h.</h3>
+
+<!-- Conteúdo dinâmico para a rota /rota1/{nome} -->
+<h1 th:text="${nome} ? 'Olá, ' + ${nome} + '! Seja bem-vindo!'"></h1>
+
+<!-- Conteúdo dinâmico para a rota /rota2/{peso}/{altura} -->
+<h1 th:text="${peso} ? 'Seu peso é: ' + ${peso} + ' kg. Sua altura é: ' + ${altura} + ' metros.'"></h1>
+
+<!-- Conteúdo dinâmico para a rota /rota3/{altura}/{peso} -->
+<h1 th:text="${imc} ? 'Seu IMC é: ' + ${imc} + '. ' + ${resultado}"></h1>
+
+</body>
+</html>
