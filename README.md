@@ -7,10 +7,10 @@ Este é o repositório do projeto "Seca Gordura Academia", um aplicativo web des
 Nossa aplicação oferece três rotas principais, cada uma com sua funcionalidade específica relacionada ao tema "Academia". Abaixo, descrevemos brevemente cada rota e sua funcionalidade:
 
 1. **Rota 1 - Boas-vindas**
-   - Ao acessar a rota `http://localhost:4500/rota1/{nome}`, você receberá uma mensagem de boas-vindas personalizada com o nome fornecido na URL.
+   - Ao acessar a URL: `http://localhost:4500/rota1/{nome}` uma tela de boas-vindas personalizada com o nome fornecido na URL será exibida.
 
 2. **Rota 2 - Descrição de Peso e Altura**
-   - Acesse a rota `http://localhost:4500/rota2/{peso}/{altura}` para receber uma mensagem que descreve o peso e altura fornecidos na URL.
+   - A rota `http://localhost:4500/rota2/{peso}/{altura}` exibi uma tela descrevendo o peso e altura fornecidos na URL.
 
 3. **Rota 3 - Cálculo de IMC**
    - A rota `http://localhost:4500/rota3/{altura}/{peso}` calcula o Índice de Massa Corporal (IMC) com base na altura e peso inseridos na URL. Além disso, ela fornece uma interpretação do resultado do IMC, indicando se você está abaixo do peso, com peso normal ou acima do peso.
