@@ -4,23 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academia</title>
+    <title>Seca Gordura</title>
+    <link rel="stylesheet" href="/estilo.css">
 </head>
 <body>
 
+<div class = "retangulo">
+    <div class="conteiner">
+        <h1 class="titulo"> Bem-vindo à academia Seca Gordura! </h1>
+        <h2 class="texto"> Nossa equipe, formada pelos personal trainers Marta Toyoda e Rian Mendonça, estão aptos para lhe ajudar no seu programa de emagrecimento. </h2>
+        <h3 class="titulo"> Estamos localizados na Rua ABC, 81 - das 7h às 22h. </h3>
 
-<h1>Bem-vindo à academia Seca Gordura!</h1>
-<h2>Nossa equipe, formada pelos personais trainees Marta Toyoda e Rian Mendonça, estão aptos para lhe ajudar no seu programa de emagrecimento.</h2>
-<h3>Estamos localizados na Rua ABC, 81 - das 7h às 22h.</h3>
+        <hr>
 
-<!-- Conteúdo dinâmico para a rota /rota1/{nome} -->
-<h1 th:text="${nome} ? 'Olá, ' + ${nome} + '! Seja bem-vindo!'"></h1>
+        <div>
+            <h1 class="texto"> Descrição do projeto </h1>
+            <ul class="texto">
+                <li> Nosso projeto contém três rotas que foram baseadas no tema "Academia". </li>
+                <li> A porta do nosso projeto foi alterada de "8080" para "4500". </li>
+            </ul>
 
-<!-- Conteúdo dinâmico para a rota /rota2/{peso}/{altura} -->
-<h1 th:text="${peso} ? 'Seu peso é: ' + ${peso} + ' kg. Sua altura é: ' + ${altura} + ' metros.'"></h1>
+            <h2 class="texto"> Funcionamento das rotas </h2>
+            <ul class="texto">
+                <li> Ao acessar a Rota 1 atravéz da URL: "http://localhost:4500/rota1/"Seu nome", será exibida uma mensagem de Boas Vindas contendo o nome inserido na URL. </li>
+                <li> Ao acessar a Rota 2 atravéz da URL: "http://localhost:4500/rota2/"Seu peso"/"Sua altura" será exibida uma mensagem descrevendo o peso e altura inseridos na URL. </li>
+                <li> Ao acessar a Rota 3 atrávez da URL: "http://localhost:4500/rota3/"Sua altura/"Seu peso" será exibida uma mensagem contendo o resultado do calculo de IMC (Índice de Massa Corporal) com base na altura e peso inseridos na URL. </li>
+            </ul>
 
-<!-- Conteúdo dinâmico para a rota /rota3/{altura}/{peso} -->
-<h1 th:text="${imc} ? 'Seu IMC é: ' + ${imc} + '. ' + ${resultado}"></h1>
+            <p class="texto"> Observação: A altura e peso devem ser inseridos no formato decimal. </p>
+
+            <h3 class="texto"> Exemplo de funcionamento da Rota 3 </h3>
+            <p class="texto">Ao digitar os valores 1.78(altura) e 69.1(peso) na URL da seguinte forma: "http://localhost:4500/rota3/1.78/69.1", o resultado o IMC será "21.8"</p>
+
+        </div>
+
+    </div>
+</div>
 
 </body>
 </html>
