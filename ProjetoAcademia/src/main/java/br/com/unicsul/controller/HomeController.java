@@ -1,19 +1,36 @@
 package br.com.unicsul.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+@SpringBootApplication
 @Controller
 @RequestMapping("/")
 public class HomeController {
+
+    @Autowired
+    @Qualifier("appName")
+    private String appName;
+
+    @Autowired
+    @Qualifier("appDescricao")
+    private String appDescricao;
 
     @GetMapping("/")
     public String apresentacao()
     {
         return "academia";
+    }
+
+    @GetMapping("/descricao")
+    public String idade(){
+        return appDescricao;
     }
 
     @GetMapping("/rota1/{nome}")
