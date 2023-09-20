@@ -15,10 +15,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HomeController {
 
     @Autowired
-    @Qualifier("appName")
-    private String appName;
-
-    @Autowired
     @Qualifier("appDescricao")
     private String appDescricao;
 
