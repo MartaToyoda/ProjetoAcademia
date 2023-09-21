@@ -21,7 +21,7 @@ public class HomeController {
     @GetMapping("/")
     public String apresentacao()
     {
-        return "academia";
+        return "index";
     }
 
     @GetMapping("/descricao")
@@ -32,14 +32,14 @@ public class HomeController {
     @GetMapping("/rota1/{nome}")
     public String rota1(@PathVariable String nome, ModelMap model) {
         model.addAttribute("nome", nome);
-        return "apresentacao";
+        return "boasVindas";
     }
 
     @GetMapping("/rota2/{peso}/{altura}")
     public String rota2(@PathVariable Double peso, @PathVariable Double altura, ModelMap model) {
         model.addAttribute("peso", peso);
         model.addAttribute("altura", altura);
-        return "descricao";
+        return "exibicao";
     }
 
     @GetMapping("/rota3/{altura}/{peso}")
