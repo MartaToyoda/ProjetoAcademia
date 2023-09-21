@@ -12,7 +12,7 @@
 <div class="retangulo">
     <div class="container">
         <!-- Conteúdo dinâmico para a rota /rota3/{altura}/{peso} -->
-        <h1 class="texto" th:text="${imc} ? 'Seu IMC é: ' + ${imc} + '. ' + ${resultado}"></h1>
+        <h1 class="texto" th:utext="${imc} ? 'Seu IMC é: ' + ${imc} + '. &lt;br&gt;' + ${resultado}"></h1>
     </div>
 </div>
 

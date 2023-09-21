@@ -11,4 +11,7 @@ public class Config {
         return "descricao";
         }
 
+        @Bean(name = "appVersion")
+        public String appVersion() { return "Versão 1.0.0"; }
+
 }

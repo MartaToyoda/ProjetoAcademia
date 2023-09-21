@@ -12,7 +12,7 @@
 <div class="retangulo">
     <div class="container">
         <!-- Conteúdo dinâmico para a rota /rota2/{peso}/{altura} -->
-        <h1 class="texto" th:text="'Seu peso é: ' + ${peso} + ' kg. | Sua altura é: ' + ${altura} + ' metros.'"></h1>
+        <h1 class="texto" th:utext="'Seu peso é: ' + ${peso} + ' kg. &lt;br&gt; Sua altura é: ' + ${altura} + ' metros.'"></h1>
     </div>
 </div>
 
