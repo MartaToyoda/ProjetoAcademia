@@ -15,7 +15,9 @@ Nossa aplicação oferece três rotas principais, cada uma com sua funcionalidad
 3. **Rota 3 - Cálculo de IMC**
    - A rota `http://localhost:4500/rota3/{altura}/{peso}` calcula o Índice de Massa Corporal (IMC) com base na altura e peso inseridos na URL. Além disso, ela fornece uma interpretação do resultado do IMC, indicando se você está abaixo do peso, com peso normal ou acima do peso.
 
-**Observação:** Lembre-se de que a altura e o peso devem ser inseridos no formato decimal.
+**Observação:** Lembre-se de que a altura e o peso devem ser inseridos no formato decimal com ponto, exemplo "58.1".
+
+- Também adicionamos um "Bean" que direciona para a página de descrição da nossa academia e pode se acessado através URL: `http://localhost:3500/descricao`
 
 ## Como Usar
 
