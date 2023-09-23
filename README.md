@@ -4,16 +4,16 @@ Este é o repositório do projeto "Seca Gordura Academia", um aplicativo web des
 
 ## Descrição do Projeto
 
-Nossa aplicação oferece três rotas principais, cada uma com sua funcionalidade específica relacionada ao tema "Academia". Abaixo, descrevemos brevemente cada rota e sua funcionalidade:
+Nosso projeto, embora simples, é altamente funcional e se baseia no tema "Academia" para definir suas rotas e configurações. A seguir, vamos explicar o funcionamento dessas rotas de forma mais detalhada:
 
 1. **Rota 1 - Boas-vindas**
-   - A rota `http://localhost:4500/rota1/{nome}` exibi uma tela de boas-vindas personalizada com o nome fornecido na URL.
+   - A rota `http://localhost:3500/rota1/{nome}` exibi uma tela de boas-vindas personalizada com o nome fornecido na URL.
 
 2. **Rota 2 - Descrição de Peso e Altura**
-   - A rota `http://localhost:4500/rota2/{peso}/{altura}` exibi uma tela descrevendo o peso e altura fornecidos na URL.
+   - A rota `http://localhost:3500/rota2/{peso}/{altura}` exibi uma tela descrevendo o peso e altura fornecidos na URL.
 
 3. **Rota 3 - Cálculo de IMC**
-   - A rota `http://localhost:4500/rota3/{altura}/{peso}` calcula o Índice de Massa Corporal (IMC) com base na altura e peso inseridos na URL. Além disso, ela fornece uma interpretação do resultado do IMC, indicando se você está abaixo do peso, com peso normal ou acima do peso.
+   - A rota `http://localhost:3500/rota3/{altura}/{peso}` calcula o Índice de Massa Corporal (IMC) com base na altura e peso inseridos na URL. Além disso, ela fornece uma interpretação do resultado do IMC, indicando se você está abaixo do peso, com peso normal ou acima do peso.
 
 **Observação:** Lembre-se de que a altura e o peso devem ser inseridos no formato decimal com ponto, exemplo "58.1".
 
@@ -27,7 +27,7 @@ Para executar o projeto em sua máquina, siga estas etapas:
 2. Importe o projeto em sua IDE preferida, como Eclipse ou IntelliJ.
 3. Certifique-se de que você possui o Spring Boot e todas as dependências configuradas.
 4. Execute a classe HomeController para iniciar o servidor.
-5. Abra seu navegador e acesse http://localhost:4500 para acessar o aplicativo da academia Seca Gordura.
+5. Abra seu navegador e acesse http://localhost:3500 para acessar o aplicativo da academia Seca Gordura.
 
 ## Estilo e Personalização
 
