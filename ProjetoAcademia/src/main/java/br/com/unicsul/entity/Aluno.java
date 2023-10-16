@@ -9,8 +9,8 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
-@Getter @Setter @NoArgsConstructor
-@Entity
+    @Getter @Setter @NoArgsConstructor
+    @Entity
     @Table (name= "alunos")
     public class Aluno implements Serializable {
 

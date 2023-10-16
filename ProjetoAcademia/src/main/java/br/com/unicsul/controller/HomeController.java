@@ -35,11 +35,9 @@ public class HomeController {
         return "boasVindas";
     }
 
-    @GetMapping("/rota2/{peso}/{altura}")
-    public String rota2(@PathVariable Double peso, @PathVariable Double altura, ModelMap model) {
-        model.addAttribute("peso", peso);
-        model.addAttribute("altura", altura);
-        return "exibicao";
+    @GetMapping("/rota2")
+    public String rota2(ModelMap modelMap) {
+        return "formulario";
     }
 
     @GetMapping("/rota3/{altura}/{peso}")
