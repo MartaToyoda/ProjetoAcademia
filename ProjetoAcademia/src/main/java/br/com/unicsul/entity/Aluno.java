@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.io.Serializable;
-import java.time.LocalDateTime;
 import java.util.Objects;
 
     @Getter @Setter @NoArgsConstructor
@@ -22,17 +21,11 @@ import java.util.Objects;
         @Column (name= "nome", nullable = false, unique = true, length = 255)
         private String nome;
 
-        @Column (name = "peso", nullable = false, unique = false, length = 3)
+        @Column (name = "peso", nullable = false, unique = false, precision =5, scale = 3)
         private float peso;
 
-        @Column (name = "altura", nullable = false, unique = false, length = 3)
+        @Column (name = "altura", nullable = false, unique = false, precision =5, scale = 3)
         private float altura;
-
-        @Column (name = "data_criacao")
-        private LocalDateTime dataCriacao;
-
-        @Column (name = "data_exclucao")
-        private LocalDateTime dataExclusao;
 
         @Override
         public boolean equals (Object o ) {
