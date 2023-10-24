@@ -10,7 +10,6 @@ import org.springframework.transaction.annotation.Transactional;
     @Service
     public class AlunoService {
 
-        private final AlunoService alunoService;
         private final AlunoRepository alunoRepository;
 
         @Transactional
